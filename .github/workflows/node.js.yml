@@ -37,5 +37,5 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL }}
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         
-          heroku_app_name: "aulah1"
+          heroku_app_name: "trabalhoh1"
           procfile: "web: npm start"
