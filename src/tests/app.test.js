@@ -11,7 +11,7 @@ const { validate : isUuid } = require("uuid");
             .send({
 
                 "name" : "Gilmar",
-                cpf : 0147,
+                cpf : 147,
                 peso : 60,
                 altura : 1.72,
                
@@ -22,7 +22,7 @@ const { validate : isUuid } = require("uuid");
 
                 "newCadastro": {
                         "name" : "Gilmar",
-                        cpf : 0147,
+                        cpf : 147,
                         peso : 60,
                         altura : 1.72,
                         imc :  20.3,
@@ -51,7 +51,7 @@ const { validate : isUuid } = require("uuid");
                     .post("/")
                     .send({
                         "name" : "Gilmar",
-                         cpf : 0147,
+                         cpf : 147,
                          peso : 60,
                         altura : 1.72
                     })
@@ -61,7 +61,7 @@ const { validate : isUuid } = require("uuid");
                    
                     "newCadastro": {
                         "name" : "Gilmar",
-                        cpf : 0147,
+                        cpf : 147,
                         peso : 60,
                         altura : 1.72,
                         imc :  20.3,
@@ -75,14 +75,14 @@ const { validate : isUuid } = require("uuid");
                     .put(`/${response.body.newCadastro.id}`)
                     .send({
                         "name" : "Gilmar",
-                         cpf : 0147,
+                         cpf : 147,
                          peso : 60,
                         altura : 1.72
                     })
                     .expect(200);
                 expect(responseUpd.body).toMatchObject({
                     "name" : "Gilmar",
-                    cpf : 0147,
+                    cpf : 147,
                     peso : 60,
                    altura : 1.72
                 });
