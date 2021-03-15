@@ -11,7 +11,7 @@ const { validate : isUuid } = require("uuid");
             .send({
 
                 "name" : "Gilmar",
-                cpf : 147,
+                cpf : 1471,
                 peso : 60,
                 altura : 1.72,
                
